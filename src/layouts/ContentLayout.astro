@@ -1,0 +1,9 @@
+---
+import '../styles/global.css';
+const { sectionTitle } = Astro.props;
+import { ViewTransitions } from 'astro:transitions';
+---
+<section>
+    <h3 transition:animate="slide">{sectionTitle}</h3>
+    <slot />
+</section>

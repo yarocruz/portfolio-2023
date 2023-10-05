@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --purple: #8074A0;
+}
 body {
     background-color: #191919;
     color: white;
@@ -14,7 +17,7 @@ main {
     padding: 0px 20px;
 }
 h1 {
-    color: #8074A0;
+    color: var(--purple);
 }
 .hr {
     width: 100%;
@@ -34,8 +37,19 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+section {
+    background-color: black;
+    border: 2px solid var(--purple);
+    border-bottom-right-radius: 30px;
+    height: 300px;
+    padding: 20px
+}
 
 .copyright {
     text-align: center;
     font-style: italic;
+}
+
+footer {
+    margin-top: 20px;
 }
