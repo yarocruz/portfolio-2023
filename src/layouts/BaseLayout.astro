@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+const { pageTitle } = Astro.props;
+import { ViewTransitions } from 'astro:transitions';
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<main>
+            <h1 transition:animate="slide">{pageTitle}</h1>
+            <svg class="hr" xmlns="http://www.w3.org/2000/svg" width="960" height="47.772" viewBox="0 0 2316 47.772">
+                <path id="Path_2" data-name="Path 2" d="M8142,219.034h550.542l51.3,45.772L10458,264.568" transform="translate(-8142 -218.034)" fill="none" stroke="#26e1e8" stroke-width="2"/>
+            </svg>
+            <nav>
+                <ul>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="projects">PROJECTS</a></li>
+                </ul>
+            </nav>
+            <slot/>
+            <footer>
+                <svg class="hr" xmlns="http://www.w3.org/2000/svg" width="960" height="47.772" viewBox="0 0 2316 47.772">
+                    <path id="Path_2" data-name="Path 2" d="M8142,219.034h550.542l51.3,45.772L10458,264.568" transform="translate(-8142 -218.034)" fill="none" stroke="#26e1e8" stroke-width="2"/>
+                </svg> 
+                <p class="copyright">Copyright JayCruz 2023</p>
+            </footer>
+        </main>
+	</body>
+</html>

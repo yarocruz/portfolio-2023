@@ -1,25 +1,12 @@
 ---
 import '../styles/global.css';
 import { ViewTransitions } from 'astro:transitions';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'JAYCRUZ'
 ---
+<BaseLayout pageTitle={pageTitle}>
+	<p>This shows up here.</p>
+	
+</BaseLayout>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<ViewTransitions />
-	</head>
-	<body>
-		<h1 transition:animate="slide">JAYCRUZ</h1>
-		<hr />
-		<nav>
-			<ul>
-				<li><a href="/">ABOUT</a></li>
-				<li><a href="projects">PROJECTS</a></li>
-			</ul>
-		</nav>
-	</body>
-</html>
+
