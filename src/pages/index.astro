@@ -3,11 +3,16 @@ import '../styles/global.css';
 import { ViewTransitions } from 'astro:transitions';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
-const pageTitle = 'JAYCRUZ'
+import ProjectList from '../components/ProjectList.astro';
+import ProjectContainer from '../components/ProjectContainer.astro';
+const pageTitle = 'ABOUT'
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<ContentLayout sectionTitle={pageTitle}>
-		
+		<div class="about-container">
+			<ProjectList />
+			<ProjectContainer />
+		</div>
 	</ContentLayout>
 </BaseLayout>
 

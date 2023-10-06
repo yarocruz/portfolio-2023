@@ -5,6 +5,7 @@
 }
 :root {
     --purple: #8074A0;
+    --mint: #26E1E8;
 }
 body {
     background-color: #191919;
@@ -41,8 +42,33 @@ section {
     background-color: black;
     border: 2px solid var(--purple);
     border-bottom-right-radius: 30px;
-    height: 300px;
     padding: 20px
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 30%;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    border: 1px solid var(--mint);
+}
+.projects li {
+    padding: 10px;
+    border-bottom: 1px solid var(--mint);
+}
+
+.projects li:hover {
+    background-color: var(--mint);
+}
+.about-container {
+    display: flex;
+}
+.project-container {
+    margin: 10px 0;
+    border: 1px solid var(--mint);
+    padding: 10px;
 }
 
 .copyright {
